@@ -1,0 +1,119 @@
+#menu {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 20px;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 20px 20px 0;
+    cursor: pointer;
+  }
+  
+  #menu-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #3a79a9;
+    border-radius: 75%;
+    transform: translateX(-40px)
+  }
+
+  .bar {
+    height: 5px;
+    width: 70%;
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    transform: translateY(20px);
+    transition: transform 0s, background-color 0.3s ease 0.3s;
+  }
+  
+  #bar1 {
+    transform: translateY(28px) translateX(12px);
+  }
+
+  #bar2 {
+    transform: translateY(32px) translateX(12px);
+  }
+  
+  #bar3 {
+    transform: translateY(36px) translateX(12px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    text-align: right;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg,
+  #menu {
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 20px 20px 0;
+    background: radial-gradient(circle, #3a79a9, #3a79a9);
+    border-radius: 50%;
+    border: 0px;
+    transition: 0.3s ease;
+  }
+  
+  .change  {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform:  translateX(10px) translateY(25px);
+  }
+  
+  .change #bar2 {
+    transform: translateX(10px) translateY(29px);
+  }
+  
+  .change #bar3 {
+    transform: translateX(10px) translateY(33px);
+  }
+
+  .change #menu-circle {
+    transition: transform 0s, background-color 0.1s ease 0.1s;
+    background-color: #3a79a9;
+    transform: translateX(50px);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    background-color: lightblue;
+    transform: translate(45%, -30%);
+  }
